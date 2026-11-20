@@ -4,6 +4,8 @@ Python port of the R **`circlize`** circular visualization library (v0.4.16), bu
 
 All core circular layouts, low-level primitives, high-level statistical tracks, hierarchical dendrograms, chord diagrams, split circular heatmaps, nested zoom plots, genomic ideograms, and all bundled datasets are available in pure Python with full 3-way API parity so R examples translate almost verbatim.
 
+**Companion Book & Full Guide:** See [**circlize-book-py**](https://github.com/zhanxw/circlize-book-py) for the Python edition of *Circular Visualization in R*.
+
 ---
 
 ## Installation
