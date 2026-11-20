@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+include pyproject.toml
+exclude LICENSE_R
+exclude README_PYTHON.md
+exclude README_R.md
+recursive-include src/circlize_py/extdata *
+recursive-include tests *.py
+recursive-include examples *.py

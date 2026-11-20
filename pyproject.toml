@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circlize-py"
+version = "0.4.16"
+description = "Circular visualization in Python (port of the R circlize package)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Xiaowei Zhan", email = "zhanxw@gmail.com" }]
+requires-python = ">=3.10"
+keywords = [
+    "circos",
+    "circlize",
+    "chord-diagram",
+    "genomics",
+    "visualization",
+    "matplotlib",
+    "bioinformatics",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "scipy>=1.10",
+    "Pillow>=9.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/zhanxw/circlize-py"
+Repository = "https://github.com/zhanxw/circlize-py"
+Issues = "https://github.com/zhanxw/circlize-py/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["circlize_py*", "circlize*"]
+
+[tool.setuptools.package-data]
+circlize_py = ["extdata/*"]

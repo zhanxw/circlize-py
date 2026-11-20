@@ -1,0 +1,17 @@
+# Virtual environments & caches
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+src/*.egg-info/
+
+# Example outputs & OS files
+examples/output/
+.DS_Store
+.env
